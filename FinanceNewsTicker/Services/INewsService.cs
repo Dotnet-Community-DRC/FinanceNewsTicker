@@ -1,9 +1,9 @@
 ﻿using FinanceNewsTicker.Services.Models;
 
-namespace FinanceNewsTicker.Services
+namespace FinanceNewsTicker.Services;
+
+public interface INewsService
 {
-    public interface INewsService
-    {
-        FinanceNews GetFinanceNews(int offset);
-    }
+    FinanceNews GetFinanceNews(int offset);
 }
+

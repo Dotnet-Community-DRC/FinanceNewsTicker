@@ -1,14 +1,13 @@
 ﻿using Newtonsoft.Json;
 
-namespace FinanceNewsTicker.Services.Models
+namespace FinanceNewsTicker.Services.Models;
+
+public class FinanceNews
 {
+    [JsonProperty("pagination")]
+    public Pagination Pagination { get; set; }
 
-    public class FinanceNews
-    {
-        [JsonProperty("pagination")]
-        public Pagination Pagination { get; set; }
-
-        [JsonProperty("data")]
-        public List<NewsArticle> News { get; set; }
-    }
+    [JsonProperty("data")]
+    public List<NewsArticle> News { get; set; }
 }
+

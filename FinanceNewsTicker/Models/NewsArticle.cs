@@ -1,28 +1,27 @@
 ﻿using Newtonsoft.Json;
 
-namespace FinanceNewsTicker.Services.Models
+namespace FinanceNewsTicker.Services.Models;
+public class NewsArticle
 {
-    public class NewsArticle
-    {
-        [JsonProperty("title")]
-        public string Title { get; set; }
+    [JsonProperty("title")]
+    public string Title { get; set; }
 
-        [JsonProperty("url")]
-        public string Url { get; set; }
+    [JsonProperty("url")]
+    public string Url { get; set; }
 
-        [JsonProperty("description")]
-        public string Description { get; set; }
+    [JsonProperty("description")]
+    public string Description { get; set; }
 
-        [JsonProperty("source")]
-        public string Source { get; set; }
+    [JsonProperty("source")]
+    public string Source { get; set; }
 
-        [JsonProperty("tickers")]
-        public List<string> Tickers { get; set; }
+    [JsonProperty("tickers")]
+    public List<string> Tickers { get; set; }
 
-        [JsonProperty("tags")]
-        public List<string> Tags { get; set; }
+    [JsonProperty("tags")]
+    public List<string> Tags { get; set; }
 
-        [JsonProperty("published_at")]
-        public DateTime PublishedAt { get; set; }
-    }
+    [JsonProperty("published_at")]
+    public DateTime PublishedAt { get; set; }
 }
+
